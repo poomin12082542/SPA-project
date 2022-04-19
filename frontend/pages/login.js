@@ -65,22 +65,12 @@ export default function Login({ token }) {
             <div className={styles.container}>
                 <Navbar />
                 <h1>Login</h1>
-                <div><b>Token:</b> {token.substring(0, 15)}...
-                <button onClick={copyText}> Copy token </button>
-                </div>
-                <br/>
-                <div>
-                    Status:  {status}
-                    check: {ischeck}
-                </div>
-                <br />
                 {loginForm()}
-
                 <div>
                     <input type="checkbox"
                         name="IsRememberMe"
                         onChange={ (e) => setIscheck(e.target.value)}
-                    />Remember me!
+                    />Remember me
                     <br /><br />
                 </div>
                 

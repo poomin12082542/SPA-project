@@ -14,7 +14,7 @@ let users = db.users
 
 let students = {
     list: [
-        { id: 1, fname: "sittisak", surname: "Kummee", major: "CoE", gpa: 2.5 }
+        { id: 1, fname: "poomin", surname: "promwong", major: "CoE", gpa: 2.5 }
     ]
 }
 
