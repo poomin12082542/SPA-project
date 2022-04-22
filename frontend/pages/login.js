@@ -62,20 +62,23 @@ export default function Login({ token }) {
             <Head>
                 <title>Login</title>
             </Head>
-            <div className={styles.container}>
-                <Navbar />
-                <h1>Login</h1>
-                {loginForm()}
-                <div>
-                    <input type="checkbox"
-                        name="IsRememberMe"
-                        onChange={ (e) => setIscheck(e.target.value)}
-                    />Remember me
-                    <br /><br />
-                </div>
-                
-                <div>
-                    <button onClick={login}>Login</button>
+            <div className="flex min-h-screen">
+                <div className="w-64 bg-gray-100 border-r border-gray-200"><Navbar /></div>
+                <div className="flex-1">
+
+                    <h1>Login</h1>
+                    {loginForm()}
+                    <div>
+                        <input type="checkbox"
+                            name="IsRememberMe"
+                            onChange={(e) => setIscheck(e.target.value)}
+                        />Remember me
+                        <br /><br />
+                    </div>
+
+                    <div>
+                        <button onClick={login}>Login</button>
+                    </div>
                 </div>
             </div>
         </Layout>

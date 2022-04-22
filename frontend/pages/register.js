@@ -77,8 +77,9 @@ export default function Register({ token }) {
             <Head>
                 <title>Register</title>
             </Head>
-            <div className={styles.container}>
-                <Navbar />
+            <div className="flex min-h-screen">
+    <div className="w-64 bg-gray-100 border-r border-gray-200"><Navbar /></div>
+    <div className="flex-1">
                 <h1>Register</h1>
                 <div className={styles.content}>
                     {registerForm()}
@@ -87,6 +88,7 @@ export default function Register({ token }) {
                 <div>
                     <button onClick={register}>Register</button>
                 </div>
+            </div>
             </div>
         </Layout>
     )

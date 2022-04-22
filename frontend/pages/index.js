@@ -1,20 +1,24 @@
-import Head from 'next/head' 
-import Layout from '../components/layout' 
+import Head from 'next/head'
+import Layout from '../components/layout'
 import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
 
 export default function Home({ token }) {
- 
+
   return (
-    <Layout>
-    <Head>
+    <Layout >
+      <Head>
         <title>Home</title>
-    </Head>
-    <div className={styles.container}>
-        <Navbar />
-        <h1>Home page</h1>
-    </div>
-</Layout>
+      </Head>
+      <div className="flex min-h-screen">
+        <div className="w-64 bg-gray-100 border-r border-gray-200"><Navbar /></div>
+
+        <div className="flex-1">
+          <h1 >Home page</h1>
+
+        </div>
+      </div>
+    </Layout>
   )
 }
 
