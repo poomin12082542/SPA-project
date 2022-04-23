@@ -10,32 +10,32 @@ const AboutUs = ({ avatar_url, login }) => {
             <title>About Us</title>
         </Head>
         <div className="flex min-h-screen">
-            <div className="w-64 bg-gray-100 border-r border-gray-200"><Navbar /></div>
+            <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
 
-            <div className="flex-1">
-                <h2> About Us </h2>
-                <b>เว็บไซต์นี้เป็นส่วนหนึ่งของวิชา 240-311 DISTRIBUTED COM AND WEB TECHNO  โดยมีจุดประสงค์ เพื่อบรรลุงานที่ได้รับมอบหมายเรื่อง Javascript Website Assignment  ซึ่งรายงานนี้มีเนื้อหาเกี่ยวกับ........ </b>
-                <b>ผู้จัดทำได้เลือก หัวข้อนี้ในการทำรายงาน เนื่องมาจากเป็นเรื่องที่น่าสนใจ ............... ผู้จัดทำจะต้องขอขอบคุณ อ.......... ผู้ให้ความรู้ และแนวทางการศึกษาเพื่อน ๆ ทุกคนที่ให้ ความช่วยเหลือมาโดยตลอด ผู้จัดทำหวังว่ารายงานฉบับนี้จะให้ความรู้ และเป็นประโยชน์แก่ผู้อ่านทุก ๆ ท่าน </b>
-                <h1 className={styles.title}>
-                    <img src={avatar_url} width="80" />
-                </h1>
-
-                <ul>
-                    <li>จัดทำโดย</li>
-                    <li>นายภูมินทร์ พร้อมวงศ์</li>
-                    <li>รหัสนักศึกษา 61355512021</li>
-                    <li>คณะวิศกรรมศาสตร์ สาขาวิศกรรมคอมพิวเตอร์</li>
+            <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1 ">
+            <div className='px-60 pt-44'>
+                <h2 className='text-5xl font-mono tracking-tight text-black px-44 font-bold'> About Us </h2>
+                <br />
+                <b className='text-xl font-mono-thin tracking-tight text-black '>This website is part of 240-311 DISTRIBUTED COM AND WEB TECHNO mini project. Teach by Asst.Prof.Warodom Werapun  </b>
+                <br /><br />
+                <div className='grid grid-cols-2 gap-4'>
+                    <div>
+                <ul className='font-bold'>
+                    <li>Made by</li>
+                    <li>Poomin Promwong</li>
+                    <li>NO.6135512021</li>
+                    <li>Student of Computer Engineering</li>
                 </ul>
+              </div>
+              <div>
+              <img className=" rounded-full  filter grayscale  h-28 w-28    " src='images/poomin.jpg' alt='poomin'></img>
+              </div>
+               </div>
+                </div>
             </div>
         </div>
 
     </Layout>)
 }
-AboutUs.getInitialProps = async (ctx) => {
-    const res = await fetch('https://api.github.com/users/poomin12082542')
-    const json = await res.json()
-    return { login: json.login, avatar_url: json.avatar_url }
-}
-
 
 export default AboutUs

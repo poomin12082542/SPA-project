@@ -30,25 +30,27 @@ export default function Login({ token }) {
     }
 
     const loginForm = () => (
-        <div className={styles.gridContainer}>
-            <div>
-                Username:
+        <div>
+            <div className='text-2xl font-mono tracking-tight text-black '>
+                Username
             </div>
             <div>
                 <input type="text"
                     name="username"
                     placeholder="username"
                     onChange={(e) => setUsername(e.target.value)}
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 />
             </div>
-            <div>
-                Password:
+            <div className='text-2xl font-mono tracking-tight text-black '>
+                Password
             </div>
             <div>
                 <input type="password"
                     name="password"
                     placeholder="password"
-                    onChange={(e) => setPassword(e.target.value)} />
+                    onChange={(e) => setPassword(e.target.value)} 
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
             </div>
         </div>
     )
@@ -63,12 +65,14 @@ export default function Login({ token }) {
                 <title>Login</title>
             </Head>
             <div className="flex min-h-screen">
-                <div className="w-64 bg-gray-100 border-r border-gray-200"><Navbar /></div>
-                <div className="flex-1">
-
-                    <h1>Login</h1>
+                <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
+                <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1 px-96 pt-44">
+                    <h1 className='text-5xl font-mono tracking-tight text-black px-16 font-bold'>LOGIN</h1>
+                    <br />
+                    <div class="bg-gray-200 shadow-md rounded px-8 pt-6 pb-8 mb-4">
                     {loginForm()}
-                    <div>
+                    </div>
+                    <div className='px-10'>
                         <input type="checkbox"
                             name="IsRememberMe"
                             onChange={(e) => setIscheck(e.target.value)}
@@ -76,8 +80,8 @@ export default function Login({ token }) {
                         <br /><br />
                     </div>
 
-                    <div>
-                        <button onClick={login}>Login</button>
+                    <div className='px-24'>
+                        <button onClick={login} className="bg-gray-600 hover:bg-gray-500 text-gray-100 font-bold py-2 px-4 rounded">Log in</button>
                     </div>
                 </div>
             </div>

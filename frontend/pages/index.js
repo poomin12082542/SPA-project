@@ -11,11 +11,16 @@ export default function Home({ token }) {
         <title>Home</title>
       </Head>
       <div className="flex min-h-screen">
-        <div className="w-64 bg-gray-100 border-r border-gray-200"><Navbar /></div>
+        <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
 
-        <div className="flex-1">
-          <h1 >Home page</h1>
-
+        <div className="flex-1 ">
+          <img className=" object-cover w-full h-full filter grayscale blur-sm brightness-100 " src='images/bg.gif' alt='bg'></img>
+          <div class=" absolute top-0 right-0 px-6 py-4">
+            <h4 class="mb-3 text-6xl font-mono tracking-tight text-black pt-80 pr-96  pl-96 font-bold">MUSE MEMO</h4>
+          </div>
+          <div class=" absolute top-0 right-0 px-6 py-4">
+            <h4 class="mb-3 text-2xl font-mono tracking-tight text-black pt-60 pr-96  pl-60 font-bold">WELCOME TO</h4>
+          </div>
         </div>
       </div>
     </Layout>

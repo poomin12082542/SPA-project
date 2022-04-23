@@ -33,7 +33,7 @@ const Profile1 = ({ token }) => {
     return (
         <Layout>
             <Head>
-                <title>User profile</title>
+                <title>Your Memo</title>
             </Head>
             <div className="flex min-h-screen">
                 <div className="w-64 bg-gray-100 border-r border-gray-200"><Navbar /></div>

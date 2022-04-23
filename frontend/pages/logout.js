@@ -17,7 +17,7 @@ export default function Logout({ token }) {
     const logout = async () => {
         console.log('remove token: ', token)
         let result = await axios.get(`${config.URL}/logout`, { withCredentials: true })
-        setStatus("Logout successful")
+        setStatus("LOGOUT DONE!")
     }
 
     return (
@@ -25,13 +25,13 @@ export default function Logout({ token }) {
             <Head>
                 <title>User profile</title>
             </Head>
-            <div className="flex min-h-screen">
-                <div className="w-64 bg-gray-100 border-r border-gray-200"><Navbar /></div>
+            <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex min-h-screen">
+                <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
 
-                <div className="flex-1">
-                    <h1>Logout</h1>
+                <div className="flex-1 px-12 py-12">
+                    
                     <div>
-                        <h2> {status}  </h2>
+                        <h2 className='text-3xl font-mono tracking-tight text-black px-96 py-60 font-bold'> {status}  </h2>
                     </div>
                 </div>
             </div>
