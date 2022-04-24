@@ -82,7 +82,7 @@ export default function Register({ token }) {
             </Head>
             <div className="flex min-h-screen">
     <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
-    <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1 px-96 pt-44">
+    <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1 px-96 pt-44 animate-pulseonce">
                 <h1 className='text-5xl font-mono tracking-tight text-black px-12 font-bold'>REGISTER</h1>
                 <br />
                 <div class="bg-gray-200 shadow-md rounded px-8 pt-6 pb-8 mb-4">

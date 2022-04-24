@@ -49,8 +49,8 @@ export default function Login({ token }) {
                 <input type="password"
                     name="password"
                     placeholder="password"
-                    onChange={(e) => setPassword(e.target.value)} 
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                    onChange={(e) => setPassword(e.target.value)}
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
             </div>
         </div>
     )
@@ -66,11 +66,11 @@ export default function Login({ token }) {
             </Head>
             <div className="flex min-h-screen">
                 <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
-                <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1 px-96 pt-44">
+                <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1 px-96 pt-44 animate-pulseonce">
                     <h1 className='text-5xl font-mono tracking-tight text-black px-16 font-bold'>LOGIN</h1>
                     <br />
                     <div class="bg-gray-200 shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                    {loginForm()}
+                        {loginForm()}
                     </div>
                     <div className='px-10'>
                         <input type="checkbox"

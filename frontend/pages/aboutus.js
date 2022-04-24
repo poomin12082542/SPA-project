@@ -12,7 +12,7 @@ const AboutUs = ({ avatar_url, login }) => {
         <div className="flex min-h-screen">
             <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
 
-            <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1 ">
+            <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1 animate-pulseonce">
             <div className='px-60 pt-44'>
                 <h2 className='text-5xl font-mono tracking-tight text-black px-44 font-bold'> About Us </h2>
                 <br />
