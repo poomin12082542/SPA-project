@@ -81,7 +81,9 @@ export default function Login({ token }) {
                     </div>
 
                     <div className='px-24'>
-                        <button onClick={login} className="bg-gray-600 hover:bg-gray-500 text-gray-100 font-bold py-2 px-4 rounded">Log in</button>
+                        <form action="/memo">
+                            <button type="submit" onClick={login} className="bg-gray-600 hover:bg-gray-500 text-gray-100 font-bold py-2 px-4 rounded">Log in</button>
+                        </form>
                     </div>
                 </div>
             </div>
