@@ -9,6 +9,7 @@ export default function Home({ token }) {
     <Layout >
       <Head>
         <title>Home</title>
+        <link rel="icon" type="image/x-icon" href="/images/logo.png"></link>
       </Head>
       <div className="flex min-h-screen">
         <div className="w-64 bg-gray-100 border-r border-gray-200 "><Navbar /></div>

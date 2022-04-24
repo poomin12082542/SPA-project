@@ -24,6 +24,7 @@ export default function Logout({ token }) {
         <Layout>
             <Head>
                 <title>Logout</title>
+                <link rel="icon" type="image/x-icon" href="/images/logo.png"></link>
             </Head>
             <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex min-h-screen animate-pulseonce ">
                 <div className="w-64 bg-gray-100 border-r border-gray-200 "><Navbar /></div>
