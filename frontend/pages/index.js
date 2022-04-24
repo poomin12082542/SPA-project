@@ -11,7 +11,7 @@ export default function Home({ token }) {
         <title>Home</title>
       </Head>
       <div className="flex min-h-screen">
-        <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
+        <div className="w-64 bg-gray-100 border-r border-gray-200 "><Navbar /></div>
 
         <div className="flex-1 animate-pulseonce ">
           <img className=" object-cover w-full h-full filter grayscale blur-sm brightness-200 " src='images/bg.gif' alt='bg'></img>

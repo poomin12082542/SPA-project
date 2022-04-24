@@ -88,7 +88,7 @@ const Profile1 = ({ token }) => {
           )
           }
           {+idEdit !== +item.id ? (
-            <div className="text-xl font-mono tracking-tight text-black">{item.weight}</div>) : (
+            <div className="text-xl font-mono tracking-tight text-black">by {item.weight}</div>) : (
             <input className="text-xl rounded-lg text-[#fafafa] bg-[#EEEEEE] font-bold pl-4 mt-2 mb-2 outline-[#00ADB5] font-display" type="task" value={weight} onChange={(e) => setWeight(e.target.value)} />
           )
           }
@@ -113,7 +113,7 @@ const Profile1 = ({ token }) => {
                 <title>Your Gallery</title>
             </Head>
             <div className="flex min-h-screen">
-                <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
+                <div className="w-64 bg-gray-100 border-r border-gray-200 "><Navbar /></div>
                 <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1  animate-pulseonce">
                     
                     <div>

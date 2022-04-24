@@ -65,7 +65,7 @@ export default function Login({ token }) {
                 <title>Login</title>
             </Head>
             <div className="flex min-h-screen">
-                <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
+                <div className="w-64 bg-gray-100 border-r border-gray-200 "><Navbar /></div>
                 <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1 px-96 pt-44 animate-pulseonce">
                     <h1 className='text-5xl font-mono tracking-tight text-gray-100 px-16 font-bold drop-shadow-lg'>LOGIN</h1>
                     <br />

@@ -26,7 +26,7 @@ export default function Logout({ token }) {
                 <title>Logout</title>
             </Head>
             <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex min-h-screen animate-pulseonce ">
-                <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
+                <div className="w-64 bg-gray-100 border-r border-gray-200 "><Navbar /></div>
 
                 <div className="flex-1 px-12 py-12 ">
                     
