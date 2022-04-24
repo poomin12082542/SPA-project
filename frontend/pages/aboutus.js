@@ -14,9 +14,11 @@ const AboutUs = ({ avatar_url, login }) => {
 
             <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1 animate-pulseonce">
             <div className='px-60 pt-44'>
-                <h2 className='text-5xl font-mono tracking-tight text-black px-44 font-bold'> About Us </h2>
+                <h2 className='text-5xl font-mono tracking-tight text-gray-100 px-44 font-bold drop-shadow-lg'> ABOUT US </h2>
                 <br />
-                <b className='text-xl font-mono-thin tracking-tight text-black '>This website is part of 240-311 DISTRIBUTED COM AND WEB TECHNO mini project. Teach by Asst.Prof.Warodom Werapun  </b>
+                <b className='text-l font-mono-thin tracking-tight text-black '>Art Gallery is website that allow you to make a list of your favorite arts. </b>
+                <br />
+                <b className='text-l font-mono-thin tracking-tight text-black '>This website is part of 240-311 Distributed Com And Web Techno mini project. Teach by Asst.Prof.Warodom Werapun  </b>
                 <br /><br />
                 <div className='grid grid-cols-2 gap-4'>
                     <div>
@@ -28,7 +30,7 @@ const AboutUs = ({ avatar_url, login }) => {
                 </ul>
               </div>
               <div>
-              <img className=" rounded-full  filter grayscale  h-28 w-28    " src='images/poomin.jpg' alt='poomin'></img>
+              <img className=" rounded-full  h-28 w-28    " src='images/poomin.jpg' alt='poomin'></img>
               </div>
                </div>
                 </div>

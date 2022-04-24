@@ -67,22 +67,28 @@ export default function Login({ token }) {
             <div className="flex min-h-screen">
                 <div className="w-64 bg-gray-100 border-r border-gray-200 py-40"><Navbar /></div>
                 <div className="bg-gradient-to-r from-neutral-400 to-neutral-600 flex-1 px-96 pt-44 animate-pulseonce">
-                    <h1 className='text-5xl font-mono tracking-tight text-black px-16 font-bold'>LOGIN</h1>
+                    <h1 className='text-5xl font-mono tracking-tight text-gray-100 px-16 font-bold drop-shadow-lg'>LOGIN</h1>
                     <br />
                     <div class="bg-gray-200 shadow-md rounded px-8 pt-6 pb-8 mb-4">
                         {loginForm()}
-                    </div>
-                    <div className='px-10'>
+                        <br />
+                        <div className='px-10'>
                         <input type="checkbox"
                             name="IsRememberMe"
                             onChange={(e) => setIscheck(e.target.value)}
                         />Remember me
-                        <br /><br />
                     </div>
-
+                    </div>
+                    
+                    <div className='pl-6'>
+                        <form action="/register">
+                            <button type="submit" className='hover:text-white' >Don't have an accout? Click here</button>
+                        </form>
+                    </div>
+                    <br />
                     <div className='px-24'>
-                        <form action="/memo">
-                            <button type="submit" onClick={login} className="bg-gray-600 hover:bg-gray-500 text-gray-100 font-bold py-2 px-4 rounded">Log in</button>
+                        <form action="/gallery">
+                            <button type="submit" onClick={login} className="bg-gray-600 hover:bg-gray-500 text-gray-100 font-bold py-2 px-4 rounded drop-shadow-lg">Log in</button>
                         </form>
                     </div>
                 </div>

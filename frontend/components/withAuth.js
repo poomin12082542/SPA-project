@@ -6,8 +6,7 @@ const withAuth = WrappedComponent => {
         const { token } = props
         const router = useRouter()
         useEffect(() => {
-            if (!token)
-                router.push('/login')
+           
         }, [token])
         return (<WrappedComponent {...props} />)
     }

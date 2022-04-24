@@ -71,7 +71,7 @@ router.get('/logout', (req, res) => {
 })
 
 /* GET user profile. */
-router.get('/profile',
+router.get('/gallery',
     passport.authenticate('jwt', { session: false }),
     (req, res, next) => {
         res.send(req.user)

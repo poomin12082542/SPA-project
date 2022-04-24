@@ -31,7 +31,7 @@ export default function Logout({ token }) {
                 <div className="flex-1 px-12 py-12 ">
                     
                     <div>
-                        <h2 className='text-3xl font-mono tracking-tight text-black px-96 py-60 font-bold'> {status}  </h2>
+                        <h2 className='text-3xl font-mono tracking-tight text-gray-100 px-96 py-60 font-bold drop-shadow-lg'> {status}  </h2>
                     </div>
                 </div>
             </div>
